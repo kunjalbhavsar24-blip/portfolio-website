@@ -6,11 +6,11 @@ body {
 }
 
 nav {
+    position: sticky;
     background-color: #bb9393;
     color: #ffffff;
     padding: 10px;
-    position: sticky;
-    top: 10;
+    top: 5;
     z-index: 1000;
 }
 
@@ -43,14 +43,14 @@ h2 {
 }
 
 section {
-    margin-top: 30px;
-    padding: 20px;
+    /* position: relative; */
+    padding-top: 90px;
+    /* padding: 20px; */
+    z-index: 999;
 }
 
 #home {
-    z-index: 1;
     background-color: #fbe9e9;
-    padding: 20px;
     border-radius: 10px;
 }
 
@@ -68,6 +68,7 @@ section {
     padding: 12px 25px;
     background: #922d5a;
     color: white;
+    border-color: #922d5a;
     border-radius: 5px;
     transition: 0.3s;
 }
@@ -78,19 +79,68 @@ section {
 }
 
 #about {
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: #fbe9e9;
+    /* background-color: #f0f0f0; */
     border-radius: 10px;
 }
 
 #skills {
-    background-color: #c6d7ca;
-    padding: 20px;
+    background-color: #fbe9e9;
+    /* background-color: #c6d7ca; */
     border-radius: 10px;
 }
 
-#contact {
-    background-color: #dfd5d9;
-    padding: 20px;
+.skill-box {
+    background: #bb9393;
+    color: white;
+    padding: 15px 30px;
+    margin: 20px;
     border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box:hover {
+    transform: scale(1.1);
+    background: #922d5a;
+}
+
+#contact {
+    background-color: #fbe9e9;
+    /* background-color: #dfd5d9; */
+    border-radius: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    /* margin-top: 30px; */
+}
+
+.card {
+    flex-wrap: wrap;
+    width: 250px;
+    height: max-content;
+    margin: 15px;
+    padding: 15px;
+    gap: 20px;
+    background-color: #dfd5d9;
+}
+
+h3 {
+    color: #b32c79;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    padding-top: 0px;
+    padding: 25px;
+    gap: 20px;
+    background-color: #dfd5d9;
 }
