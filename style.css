@@ -1,20 +1,26 @@
 body {
     height: auto;
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
+    margin: 0;
+    padding-top: 80px;
 }
 
 nav {
-    position: sticky;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
     background-color: #bb9393;
     color: #ffffff;
     padding: 10px;
-    top: 5;
+    display: flex;
+    justify-content: center;
     z-index: 1000;
 }
 
 nav ul {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -50,12 +56,13 @@ p {
 }
 
 section {
-    padding: 80px 10px 20px 10px;
+    padding: 10px;
     margin: 10px;
-    z-index: 999;
+    scroll-margin-top: 80px;
 }
 
 .home {
+    padding: 2%;
     background-color: #fbe9e9;
     border-radius: 10px;
 }
@@ -71,7 +78,7 @@ section {
 
 .button {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 10px 20px;
     background: #922d5a;
     color: white;
     border-color: #922d5a;
@@ -90,6 +97,8 @@ section {
     background-color: #fbe9e9;
     /* background-color: #f0f0f0; */
     border-radius: 10px;
+    margin-top: 50px;
+    padding: 40px;
 }
 
 #skills {
@@ -130,6 +139,7 @@ h3 {
 }
 
 .project-container {
+    padding-top: 4%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -137,9 +147,10 @@ h3 {
 }
 
 .card {
+    display: flex;
     flex-wrap: wrap;
     width: 250px;
-    height: max-content;
+    height: 500px;
     padding: 2%;
     gap: 2%;
     background-color: #dfd5d9;
@@ -159,8 +170,8 @@ h3 {
 
 .card img {
     width: 200px;
-    padding-top: 0px;
-    padding: 25px;
+    padding: 20px;
+    padding-bottom: 5px;
     gap: 20px;
     background-color: #dfd5d9;
 }
