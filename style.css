@@ -42,19 +42,25 @@ h2 {
     margin: 0px;
 }
 
+p {
+    color: #000000;
+    text-align: justify;
+    margin: 10px;
+    line-height: 1.5;
+}
+
 section {
-    /* position: relative; */
-    padding-top: 90px;
-    /* padding: 20px; */
+    padding: 80px 10px 20px 10px;
+    margin: 10px;
     z-index: 999;
 }
 
-#home {
+.home {
     background-color: #fbe9e9;
     border-radius: 10px;
 }
 
-#home img {
+.home img {
     position: relative;
     width: 180px;
     height: 180px;
@@ -74,8 +80,10 @@ section {
 }
 
 .button:hover {
-    background: #a00c4f;
+    background: #721a41;
     color: white;
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 #about {
@@ -114,27 +122,39 @@ section {
     border-radius: 10px;
 }
 
+h3 {
+    padding: 0px;
+    margin: 0px;
+    color: #b32c79;
+    text-align: center;
+}
+
 .project-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
-    /* margin-top: 30px; */
 }
 
 .card {
     flex-wrap: wrap;
     width: 250px;
     height: max-content;
-    margin: 15px;
-    padding: 15px;
-    gap: 20px;
+    padding: 2%;
+    gap: 2%;
     background-color: #dfd5d9;
 }
 
-h3 {
-    color: #b32c79;
-    text-align: center;
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.card p {
+    text-align: justify;
+    margin: 10px;
+    color: #000000;
+    line-height: 1.5;
 }
 
 .card img {
